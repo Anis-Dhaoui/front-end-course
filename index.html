@@ -4,6 +4,44 @@
 <head>
 <meta charset="utf-8">
 <title>Pseudo Class Selectors</title>
+<style>
+    header li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    a:link, a:visited{
+        background-color: green;
+        display: block;
+        text-decoration: none;
+        margin-top: 3px;
+        border: 1px solid black;
+        padding: 4px;
+        color: black;
+    }
+    a:hover, a:active{
+        background-color: aqua;
+        color: blue;
+        padding: 10px;
+    }
+
+    section div:nth-child(odd){
+        background-color:gray;
+    }
+    section div:nth-child(odd):hover{
+        background-color:brown;
+        cursor:pointer;
+    }
+
+    section div:nth-child(even){
+        background-color:burlywood;
+    }
+
+    section div:nth-child(even):hover{
+        background-color:crimson;
+        cursor:-webkit-grabbing;
+    }
+</style>
 </head>
 <body>
 <h1>Pseudo Class Selectors</h1>
